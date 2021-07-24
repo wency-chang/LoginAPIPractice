@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LoginAPI</string>
+    <string name="api">https://watch-master-staging.herokuapp.com/api</string>
+    <string name="parse_id">vqYuKPOkLQLYHhk4QTGsGKFwATT4mBIGREI2m8eD</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_host"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.wency.login.login.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_timezoneFragment"
+            app:destination="@id/timezoneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/timezoneFragment"
+        android:name="com.wency.login.timezone.TimezoneFragment"
+        android:label="TimezoneFragment" >
+        <argument
+            android:name="loginInfo"
+            app:argType="com.wency.login.data.LoginResponse" />
+    </fragment>
+
+    <action
+        android:id="@+id/global_action_to_timezone_fragment"
+        app:destination="@id/timezoneFragment"
+        app:popUpTo="@id/timezoneFragment"
+        app:popUpToInclusive="true" />
+</navigation>
